@@ -1,5 +1,5 @@
 .Navbar{
-    height: 5rem;
+    height: 10rem;
     width: 100vw;
     margin: 0 auto;
     max-width: 75rem;
@@ -31,8 +31,53 @@
     color: #333333;
     background-color: white;
     border-radius: .5rem;
-   height: 1.2rem;
-   width: 5rem;
+   height: 2rem;
+   width: 6rem;
    border: none;
 
+}
+
+.mobMenu{
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+}
+.navMenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40, 40, 40);
+    border-radius: 1rem;
+
+}
+.ListItem{
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: .25rem;
+    background: rgb(30, 30, 30);
+
+}
+.active{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px;
+}
+@media screen and (max-width:720px) {
+    .mobMenu{
+        display: flex;
+    }
+    .desktopMenu{
+        display: none;
+    
+    }
+    .desktopMenubtn{
+        display: none;
+    }
+    
 }
